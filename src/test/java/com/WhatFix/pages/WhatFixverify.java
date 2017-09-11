@@ -31,6 +31,7 @@ public class WhatFixverify extends BasePageObject {
 	public boolean isloginPageDisplayed() throws Exception {
 		try {
 			flag = isElementPresent(login);
+			System.out.println("Added one line");
 			if (flag) {
 				logger.info("Login Page is displayed");
 			} else {
