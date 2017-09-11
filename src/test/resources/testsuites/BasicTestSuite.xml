@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WhatFix Test Suite">
+	
+	<parameter name="browserType" value="GC" />
+	
+	<test name="WhatFix Test"  parallel="false">
+	<groups>
+			<run>
+				<include name="BasicTests" />
+			</run>
+		</groups>
+		<classes>
+ 				 <class name="com.WhatFix.test.WhatFixverifyTest" /> 
+ 				   
+		</classes>
+	</test>
+</suite>
