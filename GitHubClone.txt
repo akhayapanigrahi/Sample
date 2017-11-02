@@ -1,0 +1,36 @@
+How to upload your Project to GitHub?
+Steps:--
+1.Create a project in Eclipse.
+2.Then Team > share Project > Create a folder in local
+3.Then Execute below command by opening "GitBash" in that local folder
+
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Itcinfotech-Github/FinalRepo.git
+git push -u origin master
+
+Other Points:
+1.Under remote create remote and give URI as repo URI and give username and password and store in secured
+
+
+
+
+
+
+
+
+
+
+
+
+How others can access your repo?
+1.open that repo.Under settings > collaborators > Add collaborators and add the team member github username
+2.Then tell him to clone your project to a local folder through execute following cmd in git bash from his new local folder
+
+:git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY(username and repo name are the repo which you want to clone)
+Ex:if Akshaya want to clone my project then the cmd will be:
+git clone https://github.com/Itcinfotech-Github/NewRepo(optional .git)
+
+3.Now import that project to Eclipse and change any file and committ
+4.Now it will reflect on master repo from where hecloned
