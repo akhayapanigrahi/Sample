@@ -1,0 +1,15 @@
+clean install -DSuiteXml=Demo.xml
+pom.xml
+------------------------------
+Solution steps for Timeouts in Jenkins:
+
+For resolve the problem we have to edit in Jenkins project configuration and find the "git".
+Then click on "Add" button and select "Advanced clone behaviours".
+Then in Timeout (in minutes) for clone and fetch operations box put any number which is more then 10, (I put 60 here).
+Apply and the save the configuration.
+Build Now again , It took some more time to build , but it will fixed this error.
+
+----------------------------------
+Execute this in COmmand prompt to run Slave:
+java -jar slave.jar -jnlpUrl http://localhost:8080/computer/Jenkinsslave/slave-agent.jnlp -secret 96832f73409acbec91a685d4d6f13c506435eb4ef5657553a23d224c6e80b93b
+---------------------
