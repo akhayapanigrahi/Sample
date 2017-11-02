@@ -1,0 +1,48 @@
+1. Go to Git hub www.github.com
+2. Login and create a Repository
+username: akhayapanigrahi
+password: welcome@93
+3. Install Git bash 
+4. Use the following commands:
+
+Right click on Project folder, open Git bash
+
+Cmd->
+git init
+git status
+git add . -- it will add all the directories into git
+git status
+git commit -m "V1.0"
+git remote add origin https://github.com/akhayapanigrahi/Appium.git
+git push -u origin master
+
+Now it will take time to push the data...
+
+Browser not opening Issue:
+Run -> Services.msc
+
+Right click on jenkins and select Allow Service to interact with Desktop from Log On Tab
+
+
+Required software:
+IEDriver.exe
+else  { 
+	
+	String actualText2=setElement(text1).getText();
+	String expectedText2="Trial Request Acknowledged";
+	if (actualText2.equals(expectedText2)) {
+			
+			logger.info("The ISV trial is started successfully");
+		} 
+}
+		
+else  { 
+			
+			String actualText3=setElement(text2).getText();
+			String expectedText3="Trial Started";
+			
+			if (actualText3.equals(expectedText3)) {
+					
+					logger.info("The ISV trial is started successfully");
+				} 
+		}
